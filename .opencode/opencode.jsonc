@@ -5,6 +5,12 @@
   //   "url": "https://enterprise.dev.opencode.ai",
   // },
   "instructions": ["STYLE_GUIDE.md"],
+  
+  // 设置默认模型为 GLM-4.7（智谱 AI）
+  // 格式: "provider/model"
+  // 如果使用 OpenAI 兼容接口，需要先配置 provider
+  "model": "zhipuai/glm-4-plus",
+  
   "provider": {
     "opencode": {
       "options": {},
@@ -15,6 +21,15 @@
       "type": "remote",
       "url": "https://mcp.context7.com/mcp",
     },
+    "ida-pro": {
+      "type": "remote",
+      "url": "http://127.0.0.1:8745/mcp"
+    },
+    // "ida-pro-manual": {
+    //   "type": "local",
+    //   "command": ["uv", "run", "idalib-mcp", "--host", "127.0.0.1", "--port", "8745"],
+    //   "timeout": 120000
+    // }
   },
   "tools": {
     "github-triage": false,
