@@ -10,20 +10,22 @@
   // 格式: "provider/model"
   // 如果使用 OpenAI 兼容接口，需要先配置 provider
   "model": "zhipuai/glm-4-plus",
-  
   "provider": {
     "opencode": {
       "options": {},
     },
+  },
+  "permission": {
+    "external_directory": "allow"
   },
   "mcp": {
     "context7": {
       "type": "remote",
       "url": "https://mcp.context7.com/mcp",
     },
-    "ida-pro": {
+    "ida-pro-proxy": {
       "type": "remote",
-      "url": "http://127.0.0.1:8745/mcp"
+      "url": "http://127.0.0.1:8744/mcp"
     },
     // "ida-pro-manual": {
     //   "type": "local",
